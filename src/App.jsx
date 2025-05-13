@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import './App.css';
-import HumanModel from './HumanModel.jsx';
 
 const Home = () => (
   <div className="min-h-screen bg-blue-50 flex flex-col items-center">
@@ -18,7 +17,7 @@ const Home = () => (
         </button>
       </Link>
       <div className="mt-8 w-full max-w-4xl">
-        <HumanModel />
+        <p>Test: 3D model geçici olarak kaldırıldı.</p>
       </div>
     </main>
     <footer className="w-full bg-blue-600 text-white py-4 mt-8">
@@ -57,19 +56,3 @@ const Operasyonlar = () => (
     </main>
     <footer className="w-full bg-blue-600 text-white py-4 mt-8">
       <p className="text-center">© 2025 Estpital International Agency</p>
-    </footer>
-  </div>
-);
-
-function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/operasyonlar" element={<Operasyonlar />} />
-      </Routes>
-    </Router>
-  );
-}
-
-export default App;
