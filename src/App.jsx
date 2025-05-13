@@ -16,9 +16,6 @@ const Home = () => (
           Operasyonları Keşfet
         </button>
       </Link>
-      <div className="mt-8 w-full max-w-4xl">
-        <p>Test: 3D model geçici olarak kaldırıldı.</p>
-      </div>
     </main>
     <footer className="w-full bg-blue-600 text-white py-4 mt-8">
       <p className="text-center">© 2025 Estpital International Agency</p>
