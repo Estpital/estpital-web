@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import './App.css';
+import HumanModel from './HumanModel.jsx';
 
 const Home = () => (
   <div className="min-h-screen bg-blue-50 flex flex-col items-center">
@@ -17,11 +18,7 @@ const Home = () => (
         </button>
       </Link>
       <div className="mt-8 w-full max-w-4xl">
-        <img
-          src="https://via.placeholder.com/800x400?text=Estpital+Banner"
-          alt="Estpital Banner"
-          className="w-full rounded-lg shadow-md"
-        />
+        <HumanModel />
       </div>
     </main>
     <footer className="w-full bg-blue-600 text-white py-4 mt-8">
