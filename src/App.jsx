@@ -37,4 +37,38 @@ const Operasyonlar = () => (
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h3 className="text-xl font-bold mb-2">Saç Ekimi</h3>
           <p className="text-gray-700">
-            <strong
+            <strong>Nedir?</strong> Saç köklerinin donör bölgeden alınıp seyrek alanlara ekilmesi.<br />
+            <strong>Süre:</strong> 4-8 saat.<br />
+            <strong>Komplikasyonlar:</strong> Enfeksiyon, geçici şişlik.<br />
+            <strong>Neden Tercih Edilir?</strong> Kalıcı ve doğal sonuçlar.
+          </p>
+        </div>
+        <div className="bg-white p-6 rounded-lg shadow-md">
+          <h3 className="text-xl font-bold mb-2">Burun Estetiği</h3>
+          <p className="text-gray-700">
+            <strong>Nedir?</strong> Burun şeklinin düzeltilmesi.<br />
+            <strong>Süre:</strong> 1-3 saat.<br />
+            <strong>Komplikasyonlar:</strong> Şişlik, morarma.<br />
+            <strong>Neden Tercih Edilir?</strong> Estetik ve fonksiyonel iyileşme.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer className="w-full bg-blue-600 text-white py-4 mt-8">
+      <p className="text-center">© 2025 Estpital International Agency</p>
+    </footer>
+  </div>
+);
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/operasyonlar" element={<Operasyonlar />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;
